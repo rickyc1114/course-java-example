@@ -1,5 +1,6 @@
 package ex4_2;
 
+import java.awt.Graphics;
 import javax.swing.*;
 
 public class TestPaintComponent extends JFrame {
@@ -16,6 +17,17 @@ public class TestPaintComponent extends JFrame {
         frame.setSize(200, 100);
         frame.setVisible(true);
     }
+
+    class NewLabel extends JLabel {
+
+        public NewLabel(String text) {
+            super(text);
+        }
+
+        @Override
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+            g.drawLine(0, 0, 50, 50);
+        }
+    }
 }
-
-
