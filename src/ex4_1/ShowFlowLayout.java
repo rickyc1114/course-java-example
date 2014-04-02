@@ -10,10 +10,10 @@ public class ShowFlowLayout extends JFrame {
     public ShowFlowLayout() {
         // Set FlowLayout, aligned left with horizontal gap 10
         // and vertical gap 20 between components
-        setLayout(new FlowLayout(FlowLayout.RIGHT, 10, 20));
+        setLayout(new FlowLayout(FlowLayout.LEFT, 10, 20));
 
         // Add labels and text fields to the frame
-        add(new JLabel("First Name"));
+        this.add(new JLabel("First Name"));
         add(new JTextField(8));
         add(new JLabel("MI"));
         add(new JTextField(1));
